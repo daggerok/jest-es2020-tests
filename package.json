@@ -1,0 +1,38 @@
+{
+  "name": "jest-es2020-tests",
+  "version": "1.0.0",
+  "description": "Jest es2020 tests",
+  "scripts": {
+    "dev": "npm run test -- --watchAll",
+    "test": "jest --reporters=default --reporters=jest-junit --collect-coverage"
+  },
+  "keywords": [
+    "jest"
+  ],
+  "author": "daggerok",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "7.9.6",
+    "@jest/core": "26.0.1",
+    "@jest/globals": "26.0.1",
+    "@jest/reporters": "26.0.1",
+    "@jest/types": "26.0.1",
+    "@types/jest": "25.2.1",
+    "@types/node": "13.13.5",
+    "core-js": "3.6.5",
+    "jest": "26.0.1",
+    "jest-junit": "10.0.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  }
+}
